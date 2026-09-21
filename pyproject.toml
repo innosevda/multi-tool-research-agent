@@ -1,0 +1,14 @@
+[project]
+name = "test-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastmcp>=4.0.4",
+    "psycopg[binary]>=3.3.5",
+    "sqlalchemy>=2.0.54",
+    "strands-agents>=1.56.0",
+    "strands-agents-tools>=0.8.9",
+]
