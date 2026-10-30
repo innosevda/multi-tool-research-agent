@@ -11,3 +11,8 @@ wheels/
 
 
 .env 
+
+# personal and test files
+IDEA.md
+tst_db.py
+research_papers/

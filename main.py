@@ -1,10 +1,7 @@
-from fastmcp import FastMCP
+from fastapi import FastAPI
 
-mcp = FastMCP("Demooooooo")
+from src.api.router import router
 
-@mcp.tool 
-def add(a:int, b:int) -> int:
-    return a+b
+app = FastAPI()
 
-if __name__ == "__main__":
-    mcp.run()
+app.include_router(router, tags=["Research Papers"])

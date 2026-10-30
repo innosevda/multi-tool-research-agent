@@ -1,8 +1,6 @@
-from database import Base, engine
-from models import User
+from src.database import models
+from src.database.database import Base, engine
 
-# "Create the tables described by my models if they don't already exist."
-# using Alchemy 
 Base.metadata.create_all(engine)
 
-print("Tables created!")
+print("Database tables created.")
